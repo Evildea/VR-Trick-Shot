@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Handedness.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
+    <Compile Include="Assets\Scripts\ThrowAssist.cs" />
     <Reference Include="Unity.XR.Management">
       <HintPath>C:/Users/s191281/Documents/Projects/VR-Trick-Shot/VR-Trick-Shot/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
     </Reference>
