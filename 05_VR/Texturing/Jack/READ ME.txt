@@ -1,0 +1,8 @@
+
+[USE THIS FOLDER FOR ALL YOUR TEXTURING STUFF. DONT ALTER TIANAS TEXTURES, THAT WILL CAUSE MERGE ERRORS, USE THE REFERENCE IMAGE IN YOUR FOLDER]
+
+1. Bring your individual assets from the exports folder into a substance file
+2. Texture your assets
+3. Export them out (Albedo only OR delete excess maps)
+4. PUT ALL FILES INTO GITKRAKEN IN CASE THERE ARE ANY ISSUES
+5. Tiana or Mika will atlas them together for submission on Wednesday :)
