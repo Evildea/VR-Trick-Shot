@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 126
+  controlID: 64
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 60
+  controlID: 110
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 61
+  controlID: 111
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Objects
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Objects
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\s191281\Documents\Projects\VR-Trick-Shot\VR-Trick-Shot
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3a380000
-    m_LastClickedID: 14394
-    m_ExpandedIDs: 000000003038000000ca9a3b
+    m_SelectedIDs: 6c370000
+    m_LastClickedID: 14188
+    m_ExpandedIDs: 000000006c37000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000030380000
+    m_ExpandedIDs: 000000006c370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a4570000
-      m_LastClickedID: 22436
-      m_ExpandedIDs: 06d2ffff20d2ffff22d2ffffb8d8ffffd2d8ffffaed9ffffecdfffff06e0ffffe2e0ffff84e1ffff9ee1ffff7ae2ffff24e3ffff3ee3ffff1ae4ffffa4e6ffffc0e6ffffd6e6ffff30e8ffff4ce8ffff62e8ffff54e9ffff70e9ffff86e9ffffcaeaffffe6eaffffd6ebffff06f1ffff30f4ffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d2d1ffffecd1ffffc6d2ffff6cd3ffff86d3ffff8ad3ffffd2d3ffffecd3ffffc6d4ffff78d5ffff92d5ffff6cd6ffff2ad7ffff44d7ffff48d7ffff98d7ffffb2d7ffff8cd8ffff8cd9ffffa6d9ffff80daffff84dbffff9edbffff78dcffff6efbffff88420000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.449, y: 1.76, z: 3.62}
+    m_Target: {x: 0.35400003, y: 2.737, z: 3.642}
     speed: 2
-    m_Value: {x: 0, y: 0.000000029802322, z: 0}
+    m_Value: {x: 0.35400003, y: 2.737, z: 3.642}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,13 +612,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.20283641, y: -0.022914274, z: 0.004746963, w: -0.97893584}
+    m_Target: {x: 0.04386399, y: 0.18974952, z: 0.008477507, w: -0.98082536}
     speed: 2
-    m_Value: {x: -0.067615695, y: -0.9300675, z: 0.21905439, w: -0.28708515}
+    m_Value: {x: 0.043863572, y: 0.18974772, z: 0.008477426, w: -0.980816}
   m_Size:
-    m_Target: 3.3928099
+    m_Target: 1.1768026
     speed: 2
-    m_Value: 0.9928101
+    m_Value: 1.1768026
   m_Ortho:
     m_Target: 0
     speed: 2
