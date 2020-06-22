@@ -7,14 +7,14 @@ public class Ball : MonoBehaviour
     private Vector3 m_startPosition;
     private Rigidbody m_body;
     private bool m_Reset = false;
-    private float m_respawnDelay;
+    private GameManager m_ActiveGameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         m_startPosition = transform.position;
         m_body = gameObject.GetComponent<Rigidbody>();
-        m_respawnDelay = FindObjectOfType<GameManager>().RespawnDelay;
+        m_ActiveGameManager = FindObjectOfType<GameManager>();
     }
 
     private void Reset()
@@ -24,6 +24,7 @@ public class Ball : MonoBehaviour
         m_body.angularVelocity = Vector3.zero;
         m_body.useGravity = false;
         m_Reset = false;
+        m_ActiveGameManager.ResetMultipler();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -33,7 +34,7 @@ public class Ball : MonoBehaviour
             if (collision.collider.tag == "OutOfBounds")
             {
                 m_Reset = true;
-                Invoke("Reset", m_respawnDelay);
+                Invoke("Reset", m_ActiveGameManager.RespawnDelay);
             }
         }
     }
@@ -45,7 +46,14 @@ public class Ball : MonoBehaviour
             if (other.gameObject.tag == "OutOfBounds")
             {
                 m_Reset = true;
-                Invoke("Reset", m_respawnDelay);
+                Invoke("Reset", m_ActiveGameManager.RespawnDelay);
+            }
+
+            if (other.gameObject.tag == "Hoop")
+            {
+                m_Reset = true;
+                Invoke("Reset", m_ActiveGameManager.RespawnDelay);
+                m_ActiveGameManager.Score += 100 * m_ActiveGameManager.GetMultiplier();
             }
         }
     }

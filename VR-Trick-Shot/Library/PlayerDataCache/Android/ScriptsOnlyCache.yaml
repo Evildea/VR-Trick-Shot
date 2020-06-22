@@ -82,29 +82,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12026}
     - Class: 114
-      Script: {instanceID: 12346}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12622}
+      Script: {instanceID: 12348}
     - Class: 114
-      Script: {instanceID: 12630}
+      Script: {instanceID: 12624}
     - Class: 114
-      Script: {instanceID: 12740}
+      Script: {instanceID: 12632}
     - Class: 114
-      Script: {instanceID: 12900}
+      Script: {instanceID: 12742}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 12902}
     - Class: 114
-      Script: {instanceID: 13186}
+      Script: {instanceID: 12982}
     - Class: 114
-      Script: {instanceID: 13326}
+      Script: {instanceID: 13188}
     - Class: 114
-      Script: {instanceID: 13446}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13512}
+      Script: {instanceID: 13448}
     - Class: 114
-      Script: {instanceID: 13608}
+      Script: {instanceID: 13514}
     - Class: 114
-      Script: {instanceID: 16286}
+      Script: {instanceID: 13610}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -294,7 +294,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 61d9ba65ff605ddbc0ac8029623727ed
+      Hash: 1b7a560b9d13da0c9731240a0fb1f1a6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -388,6 +388,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 0e5e0dde3a945c151706c50f49554af9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreBoard
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -778,12 +784,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 8e8fb221790af5c4b203ddb85313e79d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScoreBoard
   platform: 13
   scenePathNames:
   - Assets/Scenes/VR-Scene.unity
