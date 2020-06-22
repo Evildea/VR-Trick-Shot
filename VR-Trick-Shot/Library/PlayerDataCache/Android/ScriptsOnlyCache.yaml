@@ -67,6 +67,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 102
       Script: {instanceID: 0}
     - Class: 104
@@ -74,37 +76,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11680}
+      Script: {instanceID: 11684}
     - Class: 114
-      Script: {instanceID: 11888}
+      Script: {instanceID: 11892}
     - Class: 114
-      Script: {instanceID: 11998}
+      Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12026}
+      Script: {instanceID: 12030}
     - Class: 114
-      Script: {instanceID: 12048}
+      Script: {instanceID: 12052}
     - Class: 114
-      Script: {instanceID: 12348}
+      Script: {instanceID: 12352}
     - Class: 114
-      Script: {instanceID: 12624}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 12632}
+      Script: {instanceID: 12636}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12746}
     - Class: 114
-      Script: {instanceID: 12902}
+      Script: {instanceID: 12906}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12986}
     - Class: 114
-      Script: {instanceID: 13188}
+      Script: {instanceID: 13192}
     - Class: 114
-      Script: {instanceID: 13328}
+      Script: {instanceID: 13332}
     - Class: 114
-      Script: {instanceID: 13448}
+      Script: {instanceID: 13452}
     - Class: 114
-      Script: {instanceID: 13514}
+      Script: {instanceID: 13518}
     - Class: 114
-      Script: {instanceID: 13610}
+      Script: {instanceID: 13614}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -116,6 +118,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
   - hash:

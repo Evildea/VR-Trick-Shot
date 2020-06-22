@@ -51,6 +51,11 @@ public class Ball : MonoBehaviour
 
             if (other.gameObject.tag == "Hoop")
             {
+                Vector3 TargetPosition = other.transform.position;
+                TargetPosition.y += 0.15f;
+                Vector3 m_DirVector = (TargetPosition - transform.position).normalized;
+                m_body.AddForce(m_DirVector * .2f, ForceMode.VelocityChange);
+
                 m_Reset = true;
                 Invoke("Reset", m_ActiveGameManager.RespawnDelay);
                 m_ActiveGameManager.Score += 100 * m_ActiveGameManager.GetMultiplier();

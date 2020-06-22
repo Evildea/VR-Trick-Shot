@@ -4,7 +4,7 @@ public class GameManager : MonoBehaviour
 {
     public float RespawnDelay = 2f;
     public int Score = 0;
-    private int Multiplier = 0;
+    private int Multiplier = 1;
 
     public void TapMultiplier()
     {
@@ -18,6 +18,6 @@ public class GameManager : MonoBehaviour
 
     public void ResetMultipler()
     {
-        Multiplier = 0;
+        Multiplier = 1;
     }
 }

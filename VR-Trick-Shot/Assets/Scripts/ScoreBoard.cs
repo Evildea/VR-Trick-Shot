@@ -58,11 +58,7 @@ public class ScoreBoard : MonoBehaviour
         Score.text = m_ActiveGameManager.Score.ToString();
 
         // Generate Text for the Multiplier
-        int MultiplierAmount = m_ActiveGameManager.GetMultiplier();
-        if (MultiplierAmount != 0)
-            Multiplier.text = "x" + m_ActiveGameManager.GetMultiplier().ToString();
-        else
-            Multiplier.text = "x0";
+        Multiplier.text = "x" + m_ActiveGameManager.GetMultiplier().ToString();
 
 
     }
