@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    private enum State { None, PullToCenter, SpinAndDrop }
+    private enum State { None, PullToCenter, Falling }
 
     private Vector3     m_OriginalPosition;
     private Quaternion  m_OriginalRotation;
@@ -94,10 +94,18 @@ public class Ball : MonoBehaviour
 
             if (m_SnapToCenterHoopTimer == 1f)
             {
-                m_BallState = State.None;
+                m_BallState = State.Falling;
                 m_Ball.useGravity = true;
-                m_Reset = true;
-                Invoke("Reset", m_ActiveGameManager.RespawnDelay);
+                //m_Reset = true;
+                //Invoke("Reset", m_ActiveGameManager.RespawnDelay);
+            }
+
+            if (m_BallState == State.Falling)
+            {
+                Vector3 NewPosition = transform.position;
+                NewPosition.x = m_HoopCollider.transform.position.x;
+                NewPosition.z = m_HoopCollider.transform.position.z;
+                transform.position = NewPosition;
             }
         }
     }
