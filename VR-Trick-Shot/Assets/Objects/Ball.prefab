@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8851106897485273039}
   - component: {fileID: 8851106897485273038}
   - component: {fileID: 8851106897485273037}
-  - component: {fileID: 8851106897485273036}
   - component: {fileID: 8851106897485273035}
   - component: {fileID: 8851106897485273034}
   - component: {fileID: 1793089063}
+  - component: {fileID: 5833814871469130444}
   m_Layer: 8
   m_Name: Ball
   m_TagString: Interactable
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8851106897485273033}
-  m_Mesh: {fileID: -8437895889263835464, guid: 99f7e4072a5a1a44db746743bac3f5be, type: 3}
+  m_Mesh: {fileID: 6935877506589290101, guid: 99f7e4072a5a1a44db746743bac3f5be, type: 3}
 --- !u!23 &8851106897485273037
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83,19 +83,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &8851106897485273036
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8851106897485273033}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.073
-  m_Center: {x: 0, y: 0.07, z: 0}
 --- !u!54 &8851106897485273035
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -198,3 +185,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe550e4e08e544b40a4b7fe324e1c05e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &5833814871469130444
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8851106897485273033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0925383
+  m_Center: {x: 0, y: 0, z: 0}
