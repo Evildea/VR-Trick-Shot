@@ -60,6 +60,5 @@ public class ScoreBoard : MonoBehaviour
         // Generate Text for the Multiplier
         Multiplier.text = "x" + m_ActiveGameManager.GetMultiplier().ToString();
 
-
     }
 }
