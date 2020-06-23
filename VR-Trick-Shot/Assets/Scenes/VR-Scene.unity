@@ -257,6 +257,14 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7750612705950420517}
   m_PrefabAsset: {fileID: 0}
+--- !u!81 &223974227
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223974226}
+  m_Enabled: 1
 --- !u!114 &223974229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,16 +738,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1838939785}
-    - target: {fileID: 69850594675266816, guid: b9670b8c72cfbee42901015d52afeddc,
-        type: 3}
-      propertyPath: power
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 69850594675266816, guid: b9670b8c72cfbee42901015d52afeddc,
-        type: 3}
-      propertyPath: upOffset
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 69850594675266817, guid: b9670b8c72cfbee42901015d52afeddc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -795,35 +793,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 3.9670002
       objectReference: {fileID: 0}
-    - target: {fileID: 69850594675266817, guid: b9670b8c72cfbee42901015d52afeddc,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 69850594675266817, guid: b9670b8c72cfbee42901015d52afeddc,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 69850594675266817, guid: b9670b8c72cfbee42901015d52afeddc,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 69850594675266819, guid: b9670b8c72cfbee42901015d52afeddc,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f96761edb8bfc5b4d8178b75b18e3ec3, type: 2}
     - target: {fileID: 69850594675266821, guid: b9670b8c72cfbee42901015d52afeddc,
         type: 3}
       propertyPath: m_Name
       value: BlueTarget (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 69850594675266821, guid: b9670b8c72cfbee42901015d52afeddc,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9670b8c72cfbee42901015d52afeddc, type: 3}
@@ -848,7 +821,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: ea7811114018eae47afdb23ac2b43b14, type: 2}
+      objectReference: {fileID: 2100000, guid: 1fb9c0f93f17524439740196329b91c2, type: 2}
+    - target: {fileID: 2214456342967646934, guid: 6ed4f1f67dcb4984fb55f4cdcb41aefe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1fb9c0f93f17524439740196329b91c2, type: 2}
     - target: {fileID: 3520930471610858521, guid: 6ed4f1f67dcb4984fb55f4cdcb41aefe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1856,6 +1834,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade Machine
       objectReference: {fileID: 0}
+    - target: {fileID: 2214456342967646934, guid: 6ed4f1f67dcb4984fb55f4cdcb41aefe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1fb9c0f93f17524439740196329b91c2, type: 2}
+    - target: {fileID: 2214456342967646934, guid: 6ed4f1f67dcb4984fb55f4cdcb41aefe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1fb9c0f93f17524439740196329b91c2, type: 2}
     - target: {fileID: 3520930471610858521, guid: 6ed4f1f67dcb4984fb55f4cdcb41aefe,
         type: 3}
       propertyPath: m_LocalPosition.x
