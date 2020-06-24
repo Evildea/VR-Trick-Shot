@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public int StartingSeconds = 30;
     public int StartingMinutes = 1;
     public GameObject Follow;
+    public AudioSource Cheer;
+    public ScoreBoard Scoreboard;
 
     private int m_Multiplier = 1;
     private ParticleSystem m_Particle = null;
@@ -38,7 +40,23 @@ public class GameManager : MonoBehaviour
         {
             m_GameHasEnded = true;
             m_Particle.Play();
+            Cheer.Play();
         }
+    }
+
+    public void ResetGame()
+    {
+        Score = 0;
+        m_Multiplier = 1;
+        Scoreboard.SetTimer(StartingMinutes, StartingSeconds);
+        m_GameHasEnded = false;
+        m_Particle.Stop();
+        Cheer.Stop();
+    }
+
+    public bool HasGameEnded()
+    {
+        return m_GameHasEnded;
     }
 
     public void Update()

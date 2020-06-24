@@ -39,9 +39,12 @@ public class Target : MonoBehaviour
             Vector3 bounceTarget = target.transform.position + new Vector3(0f, upOffset, 0f);
 
             Vector3 m_DirVector = (bounceTarget - transform.position).normalized;
+            body.velocity = Vector3.zero;
+            body.angularVelocity = Vector3.zero;
             body.AddForce(m_DirVector * power, ForceMode.VelocityChange);
 
-            m_ActiveGameManager.TapMultiplier();
+            if (!m_ActiveGameManager.HasGameEnded())
+                m_ActiveGameManager.TapMultiplier();
 
             PlaySound();
             particle.Stop();

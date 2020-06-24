@@ -7,16 +7,17 @@ public class BallMovement : MonoBehaviour
     private enum State { None, PullToCenter, Falling }
     private enum HoldState { None, Pickup, Hold, Release }
 
-    private Vector3     m_OriginalPosition;
-    private Quaternion  m_OriginalRotation;
-    private Rigidbody   m_Ball                  = null;
-    private GameManager m_ActiveGameManager     = null;
-    private bool        m_Reset                 = false;
-    private State       m_BallState             = State.None;
-    private HoldState   m_HoldState             = HoldState.None;
-    private float       m_SnapToCenterHoopTimer = 0f;
-    private Collider    m_HoopCollider          = null;
-    private AudioSource m_AudioSource           = null;
+    private Vector3         m_OriginalPosition;
+    private Quaternion      m_OriginalRotation;
+    private Rigidbody       m_Ball                  = null;
+    private GameManager     m_ActiveGameManager     = null;
+    private bool            m_Reset                 = false;
+    private State           m_BallState             = State.None;
+    private HoldState       m_HoldState             = HoldState.None;
+    private float           m_SnapToCenterHoopTimer = 0f;
+    private Collider        m_HoopCollider          = null;
+    private AudioSource     m_AudioSource           = null;
+    private ParticleSystem  m_ParticleSystem     = null;
 
 
     // Start is called before the first frame update
@@ -27,10 +28,12 @@ public class BallMovement : MonoBehaviour
         m_Ball              = gameObject.GetComponent<Rigidbody>();
         m_ActiveGameManager = FindObjectOfType<GameManager>();
         m_AudioSource       = FindObjectOfType<AudioSource>();
+        m_ParticleSystem    = GetComponentInChildren<ParticleSystem>();
     }
 
     private void Reset()
     {
+        m_ParticleSystem.Stop();
         m_BallState             = State.None;
         transform.position      = m_OriginalPosition;
         transform.rotation      = m_OriginalRotation;
@@ -78,15 +81,29 @@ public class BallMovement : MonoBehaviour
                 m_Ball.velocity = Vector3.zero;
                 m_Ball.angularVelocity = Vector3.zero;
 
-                m_ActiveGameManager.Score += 100 * m_ActiveGameManager.GetMultiplier();
+                if (!m_ActiveGameManager.HasGameEnded())
+                    m_ActiveGameManager.Score += 100 * m_ActiveGameManager.GetMultiplier();
 
                 m_AudioSource.Play();
+            }
+
+            if (other.gameObject.tag == "Restart")
+            {
+                m_ActiveGameManager.ResetGame();
+                Reset();
             }
         }
     }
 
     private void Update()
     {
+        if (m_HoopCollider != null)
+        {
+            m_ParticleSystem.transform.rotation = Quaternion.identity;
+            m_ParticleSystem.transform.Rotate(new Vector3(1f, 0f, 0f), -90);
+            m_ParticleSystem.transform.position = m_HoopCollider.transform.position;
+        }
+
         if (m_BallState == State.PullToCenter)
         {
             m_SnapToCenterHoopTimer += Time.deltaTime;
@@ -95,8 +112,9 @@ public class BallMovement : MonoBehaviour
 
             transform.position = Vector3.Lerp(transform.position, m_HoopCollider.transform.position, m_SnapToCenterHoopTimer);
 
-            if (m_SnapToCenterHoopTimer == 1f)
+            if (m_SnapToCenterHoopTimer == 1f && m_BallState != State.Falling)
             {
+                m_ParticleSystem.Play();
                 m_BallState = State.Falling;
                 m_Ball.useGravity = true;
             }

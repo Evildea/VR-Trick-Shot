@@ -5,7 +5,9 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private Vector3 m_StartPosition;
+    private GameManager m_ActiveGameManager = null;
     private bool m_isMovingLeft = false;
+
     public float MaxMovementDistanceFromStart;
     public float MovementSpeed = 1f;
 
@@ -13,11 +15,16 @@ public class Movement : MonoBehaviour
     void Start()
     {
         m_StartPosition = transform.position;
+        m_ActiveGameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (m_ActiveGameManager.HasGameEnded())
+            return;
+
         float x = transform.position.x;
 
         if (m_isMovingLeft)

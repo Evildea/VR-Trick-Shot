@@ -15,10 +15,9 @@ GameObject:
   - component: {fileID: 69850594675266831}
   - component: {fileID: 1917805095927115343}
   - component: {fileID: 4057737771694514447}
-  - component: {fileID: 2633799478973922654}
   m_Layer: 9
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Targets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -98,8 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  power: 3
-  upOffset: 0
+  power: 4
+  upOffset: 3
   sound01: {fileID: 8300000, guid: df04e8803a3a8a14e8ab4aed7ce5bd89, type: 3}
   sound02: {fileID: 8300000, guid: b3074e43755a5864687bccb8ddc1c47f, type: 3}
   sound03: {fileID: 8300000, guid: a18f9f6896114fa488f883d0ef152cae, type: 3}
@@ -239,20 +238,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!64 &2633799478973922654
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69850594675266821}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5458667609693841020, guid: 278e59d80d28e6d489d45576abdcb84d, type: 3}
 --- !u!1001 &332585715755070874
 PrefabInstance:
   m_ObjectHideFlags: 0

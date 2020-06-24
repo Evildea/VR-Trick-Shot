@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 88
+  controlID: 160
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 271
     height: 545
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 137
+  controlID: 87
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 138
+  controlID: 88
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Textures
+    - Assets/Objects
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Textures
+  - Assets/Objects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\s191281\Documents\Projects\VR-Trick-Shot\VR-Trick-Shot
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 52390000
-    m_LastClickedID: 14674
-    m_ExpandedIDs: 000000002c39000000ca9a3b
+    m_SelectedIDs: 58390000
+    m_LastClickedID: 14680
+    m_ExpandedIDs: 000000004639000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002c390000
+    m_ExpandedIDs: 0000000046390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -504,7 +504,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6efbffff
+      m_ExpandedIDs: c674ffffe074ffffea74ffffae77ffffc877ffffd277ffff147affff2e7affff387affff9c83ffffb683ffff9684fffff885ffff1286ffff1c86ffff7689ffff9089ffff9a89ffff628dffff7c8dffff868dffffdc8dfffff68dffff008efffffe97ffff1898ffff2298ffff0c9affff269affff309affff7c9dffff969dffffa09dffff769fffff909fffff9a9fffff28c4ffff42c4ffff22c5ffffe2c5fffffcc5ffffdcc6ffff96c7ffffb0c7ffffbac7ffff2cc8ffff46c8ffff26c9ffffdac9fffff4c9ffffd4caffff84ccffff9eccffffa8ccffff64cfffff7ecfffff5ed0ffff72d1ffff8ed1ffff7cd2ffff2ed6ffff48d6ffff52d6ffff82ddffff9cddffffa6ddfffffcddffff16defffff6deffffa2e1ffffbce1ffff9ce2ffffe8e4ffff04e5fffff0e5ffffbce9ffffd6e9ffffe0e9ffff3aeaffff54eaffff34ebffff84f4ffff9ef4ffff7ef5ffff60fbffff86530000426d0000388b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.3503838, y: 0.10814544, z: -4.94894}
+    m_Target: {x: 0.633106, y: 0.38330963, z: 5.640489}
     speed: 2
-    m_Value: {x: -6.3503838, y: 0.10814544, z: -4.94894}
+    m_Value: {x: 0.633106, y: 0.38330963, z: 5.640489}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,13 +612,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.061611507, y: -0.88994706, z: 0.13497053, w: 0.4323436}
+    m_Target: {x: 0.18388587, y: 0.02866226, z: -0.0012098781, w: 0.9830363}
     speed: 2
-    m_Value: {x: 0.06093528, y: -0.8897306, z: 0.13357224, w: 0.43223232}
+    m_Value: {x: 0.18232022, y: 0.028649764, z: -0.0011662163, w: 0.98282105}
   m_Size:
-    m_Target: 8.780645
+    m_Target: 6.045235
     speed: 2
-    m_Value: 8.533378
+    m_Value: 5.745235
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -691,8 +691,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -410.5
     m_HBaseRangeMax: 410.5
-    m_VBaseRangeMin: -262
-    m_VBaseRangeMax: 262
+    m_VBaseRangeMin: -251.5
+    m_VBaseRangeMax: 251.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -709,11 +709,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 821
-      height: 524
+      height: 503
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 410.5, y: 262}
+    m_Translation: {x: 410.5, y: 251.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -721,9 +721,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -410.5
-      y: -262
+      y: -251.5
       width: 821
-      height: 524
+      height: 503
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 821, y: 524}

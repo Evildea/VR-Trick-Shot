@@ -30,10 +30,13 @@ public class ScoreBoard : MonoBehaviour
             m_Minutes -= 1;
         }
 
+        if (m_Seconds < 0)
+            m_Seconds = 0;
+
         if (m_Minutes == 0 && m_Seconds == 0)
             m_ActiveGameManager.GameHasEnded();
-        else
-            Invoke("SecondCounter", 1);
+
+        Invoke("SecondCounter", 1);
     }
 
     // Update is called once per frame
@@ -66,5 +69,11 @@ public class ScoreBoard : MonoBehaviour
         // Generate Text for the Multiplier
         Multiplier.text = "x" + m_ActiveGameManager.GetMultiplier().ToString();
 
+    }
+
+    public void SetTimer(int minutes, int seconds)
+    {
+        m_Seconds = seconds;
+        m_Minutes = minutes;
     }
 }
