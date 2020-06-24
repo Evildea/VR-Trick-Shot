@@ -9,9 +9,26 @@ public class Target : MonoBehaviour
     public float power = 10f;
     public float upOffset = 0f;
 
+    public AudioClip sound01;
+    public AudioClip sound02;
+    public AudioClip sound03;
+    public AudioClip sound04;
+    public AudioClip sound05;
+    public AudioClip sound06;
+    public AudioClip sound07;
+    public AudioClip sound08;
+    public AudioClip sound09;
+    public AudioClip sound10;
+    public AudioClip sound11;
+    public AudioClip sound12;
+    public ParticleSystem particle;
+
+    private AudioSource m_AudioSource;
+
     void Start()
     {
         m_ActiveGameManager = FindObjectOfType<GameManager>();
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,7 +42,36 @@ public class Target : MonoBehaviour
             body.AddForce(m_DirVector * power, ForceMode.VelocityChange);
 
             m_ActiveGameManager.TapMultiplier();
+
+            PlaySound();
+            particle.Stop();
+            particle.Play();
         }
+    }
+
+    private void PlaySound()
+    {
+        AudioClip temp;
+        int Rand = (int)Random.Range(1, 12);
+        switch (Rand)
+        {
+            case 1: temp = sound01; break;
+            case 2: temp = sound02; break;
+            case 3: temp = sound03; break;
+            case 4: temp = sound04; break;
+            case 5: temp = sound05; break;
+            case 6: temp = sound06; break;
+            case 7: temp = sound07; break;
+            case 8: temp = sound08; break;
+            case 9: temp = sound09; break;
+            case 10: temp = sound10; break;
+            case 11: temp = sound11; break;
+            case 12: temp = sound12; break;
+            default: temp = sound01; break;
+        }
+
+        m_AudioSource.clip = temp;
+        m_AudioSource.Play();
     }
 
 }

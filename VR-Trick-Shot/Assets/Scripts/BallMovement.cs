@@ -15,10 +15,7 @@ public class BallMovement : MonoBehaviour
     private State       m_BallState             = State.None;
     private HoldState   m_HoldState             = HoldState.None;
     private float       m_SnapToCenterHoopTimer = 0f;
-    private float       m_SnapToHandTimer       = 0f;
-
-    private Collider m_HoopCollider;
-    private Vector3 m_PullToCenterOriginalLocation;
+    private Collider    m_HoopCollider          = null;
 
 
     // Start is called before the first frame update
@@ -75,7 +72,6 @@ public class BallMovement : MonoBehaviour
                 m_BallState = State.PullToCenter;
                 m_SnapToCenterHoopTimer = 0f;
                 m_Ball.useGravity = false;
-                m_PullToCenterOriginalLocation = transform.position;
                 m_HoopCollider = other;
                 m_Ball.velocity = Vector3.zero;
                 m_Ball.angularVelocity = Vector3.zero;
@@ -110,15 +106,6 @@ public class BallMovement : MonoBehaviour
             }
         }
 
-        if (m_HoldState == HoldState.Pickup)
-        {
-            //m_SnapToHandTimer += Time.deltaTime;
-            //if (m_SnapToHandTimer > 1f)
-            //    m_SnapToHandTimer = 1f;
-
-            //transform.position = Vector3.Lerp(transform.position, m_HoopCollider.transform.position, m_SnapToHandTimer);
-        }
-
         if (m_HoldState == HoldState.Release)
         {
             m_Ball.useGravity = true;
@@ -127,15 +114,9 @@ public class BallMovement : MonoBehaviour
         }
     }
 
-    public void SetState(string state)
+    public void SetRelease()
     {
-        if (state == "Pickup")
-            m_HoldState = HoldState.Pickup;
-        else if (state == "Hold")
-            m_HoldState = HoldState.Hold;
-        else if (state == "Release")
-            m_HoldState = HoldState.Release;
-
+    m_HoldState = HoldState.Release;
     }
 
 }
