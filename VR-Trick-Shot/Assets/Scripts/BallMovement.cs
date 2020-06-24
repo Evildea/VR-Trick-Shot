@@ -116,7 +116,7 @@ public class BallMovement : MonoBehaviour
 
     public void SetRelease()
     {
-    m_HoldState = HoldState.Release;
+        m_HoldState = HoldState.Release;
     }
 
 }
