@@ -16,6 +16,7 @@ public class BallMovement : MonoBehaviour
     private HoldState   m_HoldState             = HoldState.None;
     private float       m_SnapToCenterHoopTimer = 0f;
     private Collider    m_HoopCollider          = null;
+    private AudioSource m_AudioSource           = null;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,7 @@ public class BallMovement : MonoBehaviour
         m_OriginalRotation  = transform.rotation;
         m_Ball              = gameObject.GetComponent<Rigidbody>();
         m_ActiveGameManager = FindObjectOfType<GameManager>();
+        m_AudioSource       = FindObjectOfType<AudioSource>();
     }
 
     private void Reset()
@@ -77,6 +79,8 @@ public class BallMovement : MonoBehaviour
                 m_Ball.angularVelocity = Vector3.zero;
 
                 m_ActiveGameManager.Score += 100 * m_ActiveGameManager.GetMultiplier();
+
+                m_AudioSource.Play();
             }
         }
     }

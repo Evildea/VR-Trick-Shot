@@ -45,6 +45,7 @@ public class Target : MonoBehaviour
 
             PlaySound();
             particle.Stop();
+            particle.transform.position = other.ClosestPoint(other.gameObject.transform.position);
             particle.Play();
         }
     }

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ScoreBoard : MonoBehaviour
 {
-    private int m_Seconds = 0;
-    private int m_Minutes = 0;
-    private GameManager m_ActiveGameManager;
+    private int m_Seconds = 1;
+    private int m_Minutes = 1;
+    public GameManager m_ActiveGameManager;
     public TextMesh Timer;
     public TextMesh Score;
     public TextMesh Multiplier;
@@ -14,20 +14,26 @@ public class ScoreBoard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_ActiveGameManager = FindObjectOfType<GameManager>();
-        Invoke("SecondCounter", 1);   
+        m_Seconds = m_ActiveGameManager.StartingSeconds;
+        m_Minutes = m_ActiveGameManager.StartingMinutes;
+        Invoke("SecondCounter", 1);
     }
 
     // Count How Many Seconds and Minutes have passed
     void SecondCounter()
     {
-        m_Seconds += 1;
-        if (m_Seconds > 59)
+        m_Seconds -= 1;
+
+        if (m_Seconds == 0 && m_Minutes != 0)
         {
-            m_Seconds = 0;
-            m_Minutes += 1;
+            m_Seconds = 60;
+            m_Minutes -= 1;
         }
-        Invoke("SecondCounter", 1);
+
+        if (m_Minutes == 0 && m_Seconds == 0)
+            m_ActiveGameManager.GameHasEnded();
+        else
+            Invoke("SecondCounter", 1);
     }
 
     // Update is called once per frame
