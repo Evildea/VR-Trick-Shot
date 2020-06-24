@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Textures
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Textures
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\s191281\Documents\Projects\VR-Trick-Shot\VR-Trick-Shot
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3c390000
-    m_LastClickedID: 14652
-    m_ExpandedIDs: 000000002e39000000ca9a3b
+    m_SelectedIDs: 52390000
+    m_LastClickedID: 14674
+    m_ExpandedIDs: 000000002c39000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e390000
+    m_ExpandedIDs: 000000002c390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000e23b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 90430000
-      m_LastClickedID: 17296
-      m_ExpandedIDs: eceaffff90430000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -557,16 +557,16 @@ MonoBehaviour:
   m_ShowContextualTools: 1
   m_WindowGUID: a4740d687bd78bd499f576acd43bacb6
   m_Gizmos: 1
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.619888, y: -2.0066006, z: -1.2093415}
+    m_Target: {x: -6.3503838, y: 0.10814544, z: -4.94894}
     speed: 2
-    m_Value: {x: -4.619888, y: -2.0066006, z: -1.2093415}
+    m_Value: {x: -6.3503838, y: 0.10814544, z: -4.94894}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 0
+    showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -612,13 +612,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.20293866, y: -0.6948629, z: 0.21525635, w: 0.6555884}
+    m_Target: {x: 0.061611507, y: -0.88994706, z: 0.13497053, w: 0.4323436}
     speed: 2
-    m_Value: {x: 0.20324607, y: -0.69382674, z: 0.21493557, w: 0.65658075}
+    m_Value: {x: 0.06093528, y: -0.8897306, z: 0.13357224, w: 0.43223232}
   m_Size:
-    m_Target: 8.533378
+    m_Target: 8.780645
     speed: 2
-    m_Value: 8.165912
+    m_Value: 8.533378
   m_Ortho:
     m_Target: 0
     speed: 2
